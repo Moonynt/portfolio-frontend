@@ -1,0 +1,21 @@
+[
+{
+    "nombre": "laura",
+    "apellido": "rodriguez",
+    "edad": 24,
+    "precioAsiento": 200.24,
+    "pagado": true,
+    "asiento":{
+        "numero": 13,
+        "letra": "F",
+        "cargador": false
+    },
+    "historial":[
+        {
+            "salida": "Nueva York",
+            "destino": "Chicago",
+            "fecha": "20/12/2025"
+        }
+    ]
+}
+]
