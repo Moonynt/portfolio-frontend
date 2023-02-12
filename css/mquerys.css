@@ -1,0 +1,48 @@
+
+@media (max-width: 600px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about .contenido{
+        max-width:  700px;
+    }
+    .sec-infog{
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    .contact {
+        background: rgba(37, 42, 46);
+        border: rgba(37, 42, 46) 10px solid;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    .hab{
+        background: rgba(37, 42, 46);
+        border: rgba(37, 42, 46) 5px solid;
+        border-radius: 15px;;
+        }
+
+        .about p{
+            font: 18px;
+            line-height: 100%;
+            padding-bottom: 20px;
+            background: rgba(37, 42, 46);
+            border: 10px solid rgba(37, 42, 46, .6);
+            border-radius: 25px;
+            height: auto;
+            width: 100%;
+            margin: 0px auto;
+        
+        }
+        
+
+}
