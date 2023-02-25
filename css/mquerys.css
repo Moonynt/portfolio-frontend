@@ -3,6 +3,8 @@
     header{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     header ul {
@@ -13,9 +15,10 @@
     .about .contenido{
         max-width:  700px;
     }
+
     .sec-infog{
-        display: flex;
-        margin-bottom: 60px;
+        margin: 50px;
+        display: inline;
     }
 
     .contact {
@@ -23,12 +26,17 @@
         border: rgba(37, 42, 46) 10px solid;
         border-radius: 15px;
         font-size: 15px;
+        width: 350px;
+        margin: auto;
     }
 
     .hab{
         background: rgba(37, 42, 46);
         border: rgba(37, 42, 46) 5px solid;
-        border-radius: 15px;;
+        border-radius: 15px;
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
         }
 
         .about p{
@@ -43,6 +51,18 @@
             margin: 0px auto;
         
         }
+ 
+        .inicio .banner h1{
+            margin-top: 40px;
+            font-size: 60px;
+            font-family: "Montserrat", sans-serif;
+            overflow: hidden;
+            white-space: normal;
+            animation: typing;
+            animation-duration: 1.5s;
+            animation-timing-function: steps(30, end);
+            animation-fill-mode: forwards;
+        }
         
-
+        
 }

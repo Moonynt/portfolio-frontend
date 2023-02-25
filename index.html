@@ -4,45 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio Web</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/mquerys.css">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/4bea3fd292.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="
-https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
-" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
-<body background="images/wall.jpg">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/vimg.png" alt="" width="80px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Mi perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mis proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Más información</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body>
+
+  <header>
+    <div class="imglogo">
+      <img src="images/vimg.png" alt="">
+    </div>
+    <nav>
+      <ul class="links">
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Proyectos</a>
+        </li>
+        <li>
+          <a href="#">Contactos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 <section class="inicio" >
     <div class="banner">
-        <h1>Nombre Completo</h1>
+        <h1 id="nom">Nombre Completo</h1>
+        <button id="btn-name" onclick="opacityChange()">Cambiar nombre</button>
+        <div class="inputdiv">  
+        <label for="name" class="inputs">Modificar Nombre:</label>
+        <input type="text" name="nombre" placeholder="poné algo" oninput="cambiarName(name)" class="inputs">
+      </div>
         <h2>Ingeniero en Software</h2>
         <div class="conocimientos">
             <img src="images/html.png" alt="" class="redimg">
@@ -56,7 +53,7 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
         <h2>Sobre mí</h2>
         <p><span>Mi nombre es  ...</span>, mi meta es especializarme en la tecnología que se me ponga en frente y poder desarrolar mis habilidades en todo momento Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, soluta, aut mollitia sit enim non dicta amet velit deserunt illum iure repellendus consequuntur. Nulla maxime veniam nesciunt soluta consectetur? Explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit officiis totam animi voluptatum aspernatur! Error consequuntur quaerat rerum! Sed rerum a deserunt reprehenderit. Dolorum voluptatibus iusto dolore ab nobis.</p>
 </article>
-<section class="p-inf">
+
   <div class="sec-infog">
     <div class="contact">
         <div class="inf">
@@ -81,34 +78,42 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
         <ul>
             <li>
                 <span>
-                    Diseño FrontEnd</span>
+                    Diseño FrontEnd </span
                     <div class="progress">
-                        <div class="progress-bar" style="width:50%;">
-                        <span class="progress-bar-text">50%</span>
+                        <div class="progress-bar">
+                          <div class="percent-progress" style="width: 50%;" id="bar1">
+                        <span class="progress-bar-text" id="bartext1">50%</span>
                     </div>
+                  </div>
         </li>
         <li>
             <span>
                     Desarrollo FrontEnd
+                    
             </span>
             <div class="progress">
-                <div class="progress-bar" style="width:25%;">
+                <div class="progress-bar">
+                  <div class="percent-progress" style="width: 25%;" id="bar2">
                 <span class="progress-bar-text">25%</span>
+              </div>
             </div>
         </li>
         <li>
             <span>
-                JavaScript</span>
+                JavaScript
+                </span>
                 <div class="progress">
-                    <div class="progress-bar" style="width:15%;">
+                    <div class="progress-bar">
+                      <div class="percent-progress" style="width: 15%;" id="bar3">
                     <span class="progress-bar-text">15%</span>
                 </div>
+              </div>
         </li>
         </ul>
      </div> 
    </div>
   </div>
-</section>
+
 
 <div class="footer">
   <div class="footer-container">
@@ -125,9 +130,8 @@ https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
         </li>
       </ul>
     </div>
-    <span>Este es mi footer</span>
-    <p>Esta es la información de mi footer</p>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur voluptatum libero! Saepe nobis at est veniam minus! Natus a omnis quae vitae unde repudiandae eaque animi saepe earum est!</p>
+    <span> V - 2023</span>
   </div>
 </div>
 </body>

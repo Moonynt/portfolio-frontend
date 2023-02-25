@@ -4,74 +4,65 @@
 *{
     box-sizing:border-box;
     margin: 0;
-    padding: 0;
+    padding: 0%;
     color: aliceblue;
     font-family: "Montserrat";
 }
 
+
 html, body{
-margin: 0;
-padding: 0;
-height: 100%;
-display:flex;
-flex-direction: column;
-min-height: 100vh;
+
+    min-height: 100%;
+    margin: 0;
+    min-width: 100%;
+background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");
 }
+/*background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");*/
+
+
 header{
-    height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: rgb(15, 15, 15);
-    padding: 30px 10px;
+    justify-content: space-between;
 }
 
-.navbar{
-display: flex;
-justify-content: center;
-align-items: center;
+.imglogo img{
+    height: 100px;
 }
 
-
-header .navbar ul{
-    list-style: none;
+.links li a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
 }
 
-header .navbar li{
+.links li{
     list-style: none;
     display: inline-block;
-    padding: 0 15px;
+    padding: 15px;
+    color: white;
 }
 
-header .navbar a{
-    text-decoration: none;
-    transition: .5s;
-}
-header .navbar a:hover{
-    color: #428bca;
+.links li a{
+    transition: .25s;
 }
 
-.logo{
-    height: 70px;
-    cursor: pointer;
-    padding-left: 10px;
-    font-family: "Montserrat";
+.links li a:hover{
+    border: #c73419 5px solid;
+    border-radius: 10px;
+    color: rgb(245, 226, 202);
+    background-color: #c73419;
+    animation: normal 1s;
 }
+
 .ico{
 height: 30px;
 }
 
 
-.conocimientos{
-    display: flex;
-    align-items: center;
-    padding-left: 45px;
-}
 .conocimientos img{
-    height: 85px;
+    height: 65px;
 }
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41));
     background-size: cover;
     height: 70vh;
     color: #fff;
@@ -81,8 +72,9 @@ height: 30px;
 
 .inicio .banner{
     padding: 20px;
-    max-width: 400px;
     margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     text-align: center;
 }
 .imgcont img{
@@ -96,17 +88,37 @@ height: 30px;
 }
 .inicio .banner h1{
     margin-top: 40px;
-    font-size: 42px;
+    font-size: 60px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+    }
+
+#btn-name{
+    color: black;
+    border: none;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 10px;
 }
+
+#btn-name:hover{
+    background-color: #c73419;
+}
+    .inicio .banner .inputdiv{
+        display: none;
+    }
+.inicio .banner input{
+    color: black;
+    border-radius: 10px;
+}
+
+
 .inicio .banner h2{
     font-size: 15px;
     font-weight: normal;
 }
 
 .about{
-    background: rgb(30, 35, 38,.8);
     color: #fff;
     padding: 0px 20px;
     margin: auto;
@@ -145,10 +157,6 @@ height: 30px;
     font-weight: bold;
 }
 
-
-.p-inf{
-    background-color: rgba(30,35,38,.8);
-}
 .sec-infog{
     display: flex;
     justify-content: space-evenly;
@@ -199,6 +207,28 @@ border-radius: 15px;
     text-align: center;
     font-weight: bold;
 }
+
+.buttons{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.progress-bar{
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.percent-progress{
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 100%;
+}
+.progress-bar span{
+    color: black;
+    font-weight: bold;
+}
+
 /*
 .rox-mx5{
     background: rgb(30, 35, 38,.8);
@@ -207,19 +237,52 @@ border-radius: 15px;
 
 .footer{
     text-align: center;
-    background: linear-gradient(to top, rgb(33,37,41), rgba(30,35,38,.8));
+    background-color: rgb(12, 11, 11);
+    justify-content: center;
+    align-items: center;
 }
 .footer-container{
     margin-top: 50px;
 }
-.redes h3{
-    font-size: 25px;
+.footer-container p{
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+    font-size: 17px;
+}
+
+/*
+<div class="desploy" id="menucel">
+<a onclick="cerrarNav()" href="" class="close">&times;</a>
+<div class="desploy-content">
+  <li>
+    <a href="#">Perfil</a>
+  </li>
+  <li>
+    <a href="#">Información general</a>
+  </li>
+  <li>
+    <a href="#">Contactos</a>
+  </li>
+</div>
+</div>*/
+
+.footer-container span{
+    font-size: 15px;
+    color: grey;
+}
+
+
+.redes{
+    margin: 0%;
 }
 .redes ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+   text-align: center;
+   padding-left: 50px;
 }
 
 
