@@ -16,6 +16,7 @@ html, body{
     margin: 0;
     min-width: 100%;
 background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");
+scroll-behavior: smooth;
 }
 /*background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");*/
 
@@ -26,8 +27,8 @@ header{
     justify-content: space-between;
 }
 
-.imglogo img{
-    height: 100px;
+header img{
+    height: 125px;
 }
 
 .links li a:link, a:visited, a:active{
@@ -38,8 +39,9 @@ header{
 .links li{
     list-style: none;
     display: inline-block;
-    padding: 15px;
+    padding: 30px;
     color: white;
+    font-size: 20px
 }
 
 .links li a{
@@ -47,8 +49,8 @@ header{
 }
 
 .links li a:hover{
-    border: #c73419 5px solid;
-    border-radius: 10px;
+    border: #c73419 7px solid;
+    border-radius: 15px;
     color: rgb(245, 226, 202);
     background-color: #c73419;
     animation: normal 1s;
@@ -234,6 +236,49 @@ border-radius: 15px;
     background: rgb(30, 35, 38,.8);
 }*/
 
+.lab-container{
+   background-color: rgba(37, 42, 46);
+   border: rgba(37, 42, 46) 5px solid;
+   width: 50%;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   margin-top: 30px;
+   border-radius: 15px;
+   
+}
+
+
+.lab-container h1{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(165, 53, 53, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.emp{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.emp-inf{
+    margin-right: 30px;
+    border: rgba(165, 53, 53, 0.5) 10px solid;
+    text-align: center;
+    background-color: rgba(165, 53, 53, 0.5);
+    border-radius: 10px; 
+}
+
+.emp p{
+    background-color: rgba(71, 73, 73, 0.6);
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 
 .footer{
     text-align: center;
@@ -298,6 +343,9 @@ border-radius: 15px;
     transition: .25s;
 }
 
+.scroll-btn{
+    overflow-y: scroll;
+}
 /*   <header>
         <div class="lg">
         <img src="images/vimg.png" alt="" class="logo">

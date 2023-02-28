@@ -6,16 +6,36 @@
         align-items: center;
         justify-content: center;
     }
+    
+    header .imglogo img{
+        height: 130px;
+        align-items: center;
+        margin: 0%;
+    }
 
     header ul {
         display: flex;
         flex-direction: row;
+        font-size: 23px;
     }
 
+    #btn-name{
+        color: black;
+        border: none;
+        text-decoration: none;
+        transition: 0.25s;
+        border-radius: 10px;
+        width: 120px;
+    }
+    
+     
+    .conocimientos img{
+        height: 75px;
+    }
     .about .contenido{
         max-width:  700px;
     }
-
+   
     .sec-infog{
         margin: 50px;
         display: inline;
@@ -64,5 +84,88 @@
             animation-fill-mode: forwards;
         }
         
+        .lab-container{
+            background-color: rgba(37, 42, 46);
+            border: rgba(37, 42, 46) 5px solid;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 15px;
+            
+         }
+         
+         
+         .lab-container h1{
+             font-size: 35px;
+             font-weight: bolder;
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             background-color:rgba(165, 53, 53, 0.5);
+             border-radius: 10px;
+             text-align: center;
+         }
+         
+         
+         .emp-1-inf{
+             margin-right: 30px;
+             border-right: rgba(165, 53, 53, 0.5) 10px solid;
+         }
+
+         
         
+}
+
+
+@media (max-width: 874px){
+    .lab-container{
+        background-color: rgba(37, 42, 46);
+        border: rgba(37, 42, 46) 5px solid;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        border-radius: 15px;
+        
+     }
+     
+     
+     .lab-container h1{
+         font-size: 35px;
+         font-weight: bolder;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         background-color:rgba(165, 53, 53, 0.5);
+         border-radius: 10px;
+         text-align: center;
+     }
+     
+     .emp{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .emp-inf{
+        margin: auto;
+        border: transparent;
+        text-align: center;
+    }
+    
+    .emp p{
+        background-color: rgba(71, 73, 73, 0.6);
+        padding: 10px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin: 15px;
+    }
+
+    .emp-inf img{
+    justify-content: center;
+    }
+
+    .emp-inf span{
+        text-align: center;
+        margin: 20px;
+    }
+    
+     
 }

@@ -1,9 +1,6 @@
 const input = document.querySelector('input');
 const log = document.getElementById('nom');
 const name = document.querySelector('.inputdiv');
-const bar1 = document.querySelector('.percent-progress');
-const bartext1 = document.getElementById('bartext1');
-
 
 input.addEventListener('input', updateValue);
 
