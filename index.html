@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio Web</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/mquerys.css">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/4bea3fd292.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
 
@@ -51,7 +51,7 @@
 
 <article class="about">
         <h2>Sobre mí</h2>
-        <p><span>Mi nombre es  ...</span>, mi meta es especializarme en la tecnología que se me ponga en frente y poder desarrolar mis habilidades en todo momento Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, soluta, aut mollitia sit enim non dicta amet velit deserunt illum iure repellendus consequuntur. Nulla maxime veniam nesciunt soluta consectetur? Explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit officiis totam animi voluptatum aspernatur! Error consequuntur quaerat rerum! Sed rerum a deserunt reprehenderit. Dolorum voluptatibus iusto dolore ab nobis.</p>
+        <p><span>Mi nombre es  ...</span>, mi meta es especializarme en la tecnología que se me ponga en frente y poder desarrolar mis habilidades en todo momento Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, soluta, aut mollitia sit enim non dicta amet velit deserunt illum iure repellendus consequuntur. Nulla maxime veniam nesciunt soluta consectetur? Explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit officiis totam animi voluptatum aspernatur! Error consequuntur quaerat rerum! Sed rerum a deserunt reprehenderit. Dolorum voluptatibus iusto dolore ab nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cupiditate excepturi voluptates, unde at dolorum nisi ut quia repudiandae tempore quos corrupti architecto. Voluptatem repellendus totam commodi nesciunt modi ab.</p>
 </article>
 
   <div class="sec-infog">
@@ -119,10 +119,10 @@
     <div class="empresas">
 
       <!-- Empresa 1 -->
-      <div class="emp">
+      <div class="emp" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1400" data-aos-offset="200">
 
         <div class="emp-inf">
-      <img src="images/tesla.png" alt="example" width="225px" class="emp-logos">
+      <img src="images/tesla.png" alt="example" width="225px" class="emp-logos" style="margin-top: 10px;">
       <br>
       <span>2023 - 2025</span>
       <br>
@@ -136,10 +136,10 @@
 
    <!-- Empresa 2 -->
    
-         <div class="emp">
+         <div class="emp" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1400" data-aos-offset="200">
 
         <div class="emp-inf">
-      <img src="images/google.png" alt="example" width="225px" class="emp-logos">
+      <img src="images/google.png" alt="example" width="225px" class="emp-logos" style="margin-top: 15px;">
       <br>
       <span>2025 - 2028</span>
       <br>
@@ -153,10 +153,10 @@
 
       <!-- Empresa 3 -->
 
-      <div class="emp">
+      <div class="emp" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1400" data-aos-offset="200">
 
         <div class="emp-inf">
-      <img src="images/apple.png "alt="example" width="225px" class="emp-logos">
+      <img src="images/apple.png "alt="example" width="225px" class="emp-logos" style="margin-top: 15px;">
       <br>
       <span>2028 - 2054</span>
       <br>
@@ -191,5 +191,10 @@
     <span> V - 2023</span>
   </div>
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
