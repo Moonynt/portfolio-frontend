@@ -164,6 +164,8 @@ height: 30px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .contact {
@@ -195,6 +197,7 @@ height: 30px;
 background: rgba(37, 42, 46);
 border: rgba(37, 42, 46) 20px solid;
 border-radius: 15px;
+overflow: hidden;
 }
 .hab h3{
     font-size: 30px;

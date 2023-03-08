@@ -41,8 +41,8 @@
     }
    
     .sec-infog{
-        margin: 50px;
-        display: inline;
+        display: inline-block;
+       width: 100%;
     }
 
     .contact {
