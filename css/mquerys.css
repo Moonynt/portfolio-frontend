@@ -171,5 +171,15 @@
         margin: 20px;
     }
     
+    .scrollup{
+        font-size: 55px;
+        position: fixed;
+        left: 75%;
+        top: 85%;
+        background-color: #a75243;
+        padding: 10px;
+        border-radius: 400px;
+
+     }
      
 }
