@@ -1,4 +1,33 @@
 
+@media (max-width: 1024px){
+    .footer-txt{
+        display: flex;
+        padding: 20px;
+        flex-direction:column;
+    }
+    .ft-inf{
+        width: 600px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 20px;
+    }
+
+    .ft-extra{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ft-extra p{
+        text-align: center;
+    }
+}
+
+
+
 @media (max-width: 728px){
     header{
         display: flex;
@@ -179,7 +208,22 @@
         background-color: #a75243;
         padding: 10px;
         border-radius: 400px;
-
      }
+
+     .ft-inf{
+        width: 70%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
      
+    .ft-extra{
+        width: 70%;
+        padding: 20px;
+    }
+    .ft-extra p{
+        width: 85%;
+        text-align: end;
+    }
 }
