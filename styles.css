@@ -50,7 +50,7 @@ header img{
 }
 
 .links li a:hover{
-    border: #c73419 7px solid;
+    padding: 5px;
     border-radius: 15px;
     color: rgb(245, 226, 202);
     background-color: #c73419;
@@ -227,10 +227,11 @@ overflow: hidden;
 }
 
 .percent-progress{
-    background-color: aquamarine;
+    background-color: rgb(68, 236, 180);
     border-radius: 10px;
     width: 100%;
     overflow: hidden;
+    padding: 3px;
 }
 .progress-bar span{
     color: black;
@@ -242,6 +243,86 @@ overflow: hidden;
     background: rgb(30, 35, 38,.8);
 }*/
 
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.botones{
+    list-style: none;
+    display: inline-flex;
+    gap: 3em;
+}
+
+.botones li button{
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgba(37, 42, 46);
+    font-weight:lighter;
+    letter-spacing: 0.5px;
+    transition: background-color 0.15s;
+}
+
+.botones li button:hover{
+    background-color: #c73419;
+}
+
+.op-container{
+    display: none;
+}
+
+.opinion{
+    display: inline-flex;
+    justify-content:space-between;
+}
+
+.ops{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444242;
+    padding: 35px;
+    margin: 25px;
+    border-radius: 20px;
+    
+}
+.ops img{
+    height: 220px;
+    width: 220px;
+    border-radius: 220px;
+}
+
+.ops ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.ops ul li{
+    color: yellow;
+}
+
+.ops h1{
+    color:#ff2904
+}
+
+.ops p{
+    width: 100%;
+    padding: 4px;
+    color: white;
+    text-align: center;
+}
+
+
+
 .lab-container{
    background-color: rgba(37, 42, 46);
    border: rgba(37, 42, 46) 5px solid;
@@ -251,6 +332,7 @@ overflow: hidden;
    margin: auto;
    margin-top: 30px;
    border-radius: 15px;
+   display: none;
 }
 
 
@@ -280,8 +362,6 @@ overflow: hidden;
 }
 
 .emp-inf img{
-    background-color: #a75243;
-    border-radius: 400px;
     padding: 25px;
 }
 .emp p{
@@ -332,7 +412,8 @@ overflow: hidden;
 
 .redes{
     margin: 0%;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 10px;
 }
 .redes ul {
     list-style: none;
@@ -340,19 +421,18 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-left: 50px;
+    gap: 45px;
 }
 
 
 .redes ul li{
-    padding-right: 50px;
     font-size: 40px;
 }
 
 .redes ul li a:hover{
-    background-color: #c73419;
-    border: 5px groove #c73419 ;
-    border-radius: 10px;
+    background-color: #1d1b1b;
+    border-radius: 30px;
+    padding: 5px;
     transition: .25s;
 }
 
@@ -424,20 +504,3 @@ overflow: hidden;
 .scrollup:hover{
     background-color: #c23219;
 }
-/*   <header>
-        <div class="lg">
-        <img src="images/vimg.png" alt="" class="logo">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#">Mi perfil</a>
-                </li>
-                <li>
-                    <a href="#">Mis proyectos</a>
-                </li>
-                <li>
-                    <a href="#">Más información</a>
-                </li>
-            </ul>
-        </nav>
-</header>

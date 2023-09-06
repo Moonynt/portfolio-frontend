@@ -32,14 +32,14 @@
     </nav>
   </header>
 
-<section class="inicio" >
+ <section class="inicio" >
     <div class="banner">
         <h1 id="nom">Nombre Completo</h1>
         <button id="btn-name" onclick="opacityChange()">Cambiar nombre</button>
         <div class="inputdiv">  
         <label for="name" class="inputs">Modificar Nombre:</label>
         <input type="text" name="nombre" placeholder="poné algo" oninput="cambiarName(name)" class="inputs">
-      </div>
+        </div>
         <h2>Ingeniero en Software</h2>
         <div class="conocimientos">
             <img src="images/html.png" alt="" class="redimg" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="250" >
@@ -47,12 +47,12 @@
             <img src="images/js.png" alt="" class="redimg" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600">
         </div>
     </div>
-</section>
+ </section>
 
-<article class="about">
+ <article class="about">
         <h2>Sobre mí</h2>
         <p><span>Mi nombre es  ...</span>, mi meta es especializarme en la tecnología que se me ponga en frente y poder desarrolar mis habilidades en todo momento Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, soluta, aut mollitia sit enim non dicta amet velit deserunt illum iure repellendus consequuntur. Nulla maxime veniam nesciunt soluta consectetur? Explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit officiis totam animi voluptatum aspernatur! Error consequuntur quaerat rerum! Sed rerum a deserunt reprehenderit. Dolorum voluptatibus iusto dolore ab nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cupiditate excepturi voluptates, unde at dolorum nisi ut quia repudiandae tempore quos corrupti architecto. Voluptatem repellendus totam commodi nesciunt modi ab.</p>
-</article>
+ </article>
 
   <div class="sec-infog">
     <div class="contact" data-aos="fade-left" data-aos-duration="750">
@@ -81,7 +81,7 @@
                     Diseño FrontEnd </span>
                     <div class="progress">
                         <div class="progress-bar">
-                          <div class="percent-progress" style="width: 50%;" id="bar1">
+                          <div class="percent-progress" style="width: 55%;" id="bar1">
                         <span class="progress-bar-text">50%</span>
                     </div>
                   </div>
@@ -93,7 +93,7 @@
             </span>
             <div class="progress">
                 <div class="progress-bar">
-                  <div class="percent-progress" style="width: 25%;" id="bar2">
+                  <div class="percent-progress" style="width: 30%;" id="bar2">
                 <span class="progress-bar-text">25%</span>
               </div>
             </div>
@@ -104,7 +104,7 @@
                 </span>
                 <div class="progress">
                     <div class="progress-bar">
-                      <div class="percent-progress" style="width: 15%;" id="bar3">
+                      <div class="percent-progress" style="width: 20%;" id="bar3">
                     <span class="progress-bar-text">15%</span>
                 </div>
               </div>
@@ -114,7 +114,22 @@
    </div>
   </div>
 
-  <div class="lab-container">
+
+  <div class="btn-container">
+    <ul class="botones">
+      <li>
+        <button id="job" onclick="jobOpacity()">Trabajos</button>
+      </li>
+      <li>
+        <button id="opi" onclick="opiOpacity()">Opiniones</button>
+      </li>
+      <li>
+        <button id="proyect">Proyectos</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lab-container" id="lb">
     <h1>Trabajos</h1>
     <div class="empresas">
 
@@ -171,8 +186,82 @@
     </div>
   </div>
 
+  <div class="op-container" id="op">
+    <div class="opinion">
+    <div class="ops">
+      <img src="images/persona1.jpg" alt=""><br>
+      <ul>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+      </ul>
+      <h1>Jordan Mester</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae consequatur quas voluptas esse molestias nisi quaerat reiciendis nam alias dolore. Quisquam, autem ab consequuntur iure quasi in adipisci odio minus!</p>
+    </div>
 
-<div class="footer">
+    <div class="ops">
+      <img src="images/persona2.jpg" alt=""><br>
+      <ul>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+      </ul>
+      <h1>Jordan Mester</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae consequatur quas voluptas esse molestias nisi quaerat reiciendis nam alias dolore. Quisquam, autem ab consequuntur iure quasi in adipisci odio minus!</p>
+    </div>
+    <div class="ops">
+      <img src="images/persona3.jpg" alt=""><br>
+      <ul>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+        <li>
+          <i class="fa-solid fa-star" style="color: #e7b604;"></i>
+        </li>
+      </ul>
+      <h1>Jordana Menester</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae consequatur quas voluptas esse molestias nisi quaerat reiciendis nam alias dolore. Quisquam, autem ab consequuntur iure quasi in adipisci odio minus!</p>
+    </div>
+
+  </div>
+
+  </div>
+
+
+ <div class="footer">
   <div class="footer-container">
     <div class="redes">
       <ul>
@@ -203,15 +292,15 @@
     </div>
 
   </div>
-</div>
+ </div>
 
 
-<div class="scrollup">
+ <div class="scrollup">
   <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
-</div>
+ </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
   AOS.init();
 </script>
 </body>
