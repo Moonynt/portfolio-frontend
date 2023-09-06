@@ -17,6 +17,7 @@ html, body{
     min-width: 100%;
 background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");
 scroll-behavior: smooth;
+overflow: auto;
 }
 
 /*background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");*/
@@ -259,6 +260,7 @@ overflow: hidden;
 .botones li button{
     color: white;
     padding: 10px;
+    font-size: 18px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -311,7 +313,9 @@ overflow: hidden;
 }
 
 .ops h1{
-    color:#ff2904
+    color:#ff2904;
+    text-align: center;
+
 }
 
 .ops p{
