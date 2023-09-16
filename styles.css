@@ -10,7 +10,7 @@
 }
 
 
-html, body{
+body{
 
     min-height: 100%;
     margin: 0;
@@ -27,10 +27,35 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 header img{
     height: 125px;
+}
+
+#barbutton{
+    background: none;
+    border: none;
+}
+#bar{
+    display: none;
+}
+
+
+.bar-container{
+    position: absolute;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.links-container{
+    display: none;
+    height: 100%;
+}
+
+.barlinks{
+    color: white;
 }
 
 .links li a:link, a:visited, a:active{
@@ -288,7 +313,7 @@ overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #444242;
+    background-color: rgba(37, 42, 46);
     padding: 35px;
     margin: 25px;
     border-radius: 20px;
@@ -508,3 +533,4 @@ overflow: hidden;
 .scrollup:hover{
     background-color: #c23219;
 }
+

@@ -5,6 +5,8 @@ const name = document.querySelector('.inputdiv');
 const job = document.querySelector('.lab-container');
 const opinion = document.querySelector('.op-container');
 
+const barfa = document.getElementById('bar');
+
 let trabajo = false
 let opiniones = false
 
@@ -78,3 +80,43 @@ function opiOpacity(){
         opMostrar();
     }
 }
+
+let barInvisible = true;
+
+barfa.addEventListener('click', function() {
+    const barcont = document.querySelector('.bar-container');
+    const body = document.body;
+
+    if(barInvisible == true){
+        barcont.style.transform = "translateX(0%)";
+        body.style.overflow = "hidden"
+        barInvisible = false;
+
+    }
+    else{
+        barcont.style.transform = "translateX(100%)";
+        body.style.overflow = "auto";
+        barInvisible = true;
+    }
+})
+
+/*
+function barOpacity(){
+    if(bar.style.display == "none"){
+        barMostrar();
+    }
+    else{
+        barOcultar();
+    }
+
+}
+
+function barMostrar(){
+    bar.style.display = "inline-block";
+}
+
+function barOcultar(){
+    bar.style.display = "none";
+}
+
+*/

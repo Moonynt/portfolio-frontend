@@ -153,6 +153,54 @@
 
 
 @media (max-width: 874px){
+
+    .links{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    #bar{
+        display: block;
+        cursor: pointer;
+        font-size: 60px;
+        padding: 40px;
+    }
+
+
+    .bar-container{
+        position: fixed;
+        height: 200vh;
+        width: 100%;
+        background-color: black;
+        z-index: 1;
+    }
+    .links-container{
+        height: 100%;   
+    }
+
+    .barlinks{
+        display: none;
+        color: white;
+    }
+
+
+
     .lab-container{
         background-color: rgba(37, 42, 46);
         border: rgba(37, 42, 46) 5px solid;
