@@ -9,6 +9,9 @@
     font-family: "Montserrat";
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
 
@@ -16,7 +19,6 @@ body{
     margin: 0;
     min-width: 100%;
 background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");
-scroll-behavior: smooth;
 overflow: auto;
 }
 
@@ -48,14 +50,8 @@ header img{
     transform: translateX(100%);
     transition: transform 0.3s ease;
 }
-
-.links-container{
-    display: none;
-    height: 100%;
-}
-
 .barlinks{
-    color: white;
+    display: none;
 }
 
 .links li a:link, a:visited, a:active{
