@@ -81,23 +81,24 @@ function opiOpacity(){
     }
 }
 
-let barInvisible = true;
 
-barfa.addEventListener('click', function() {
-    const barcont = document.querySelector('.bar-container');
-    const body = document.body;
+const deploybutton = document.getElementById('deploybutton');
+const deploycontainer = document.querySelector('.deploy-links')
+const body = document.querySelector('body');
 
-    if(barInvisible == true){
-        barcont.style.transform = "translateX(0%)";
-        body.style.overflow = "hidden"
-        barInvisible = false;
+let noActivo = true;
 
-    }
-    else{
-        barcont.style.transform = "translateX(100%)";
+deploybutton.addEventListener('click', function(){
+    if(noActivo){
+        deploycontainer.style.right = "0";
+        deploycontainer.scrollIntoView();
+        body.style.overflow = "hidden";
+        
+    } else{
+        deploycontainer.style.right = "100%";
         body.style.overflow = "auto";
-        barInvisible = true;
     }
+    noActivo = !noActivo;
 })
 
 /*

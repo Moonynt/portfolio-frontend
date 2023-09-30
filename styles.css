@@ -14,18 +14,16 @@ html{
 }
 
 body{
-
-    min-height: 100%;
     margin: 0;
-    min-width: 100%;
+    height: 100%;
+    max-width: 100vw;
 background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");
-overflow: auto;
 }
 
 /*background: linear-gradient(to top, rgba(30,35,38,.8), rgb(33,37,41)), url("images/wall.jpg");*/
 
 
-header{
+.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,21 +34,11 @@ header img{
     height: 125px;
 }
 
-#barbutton{
-    background: none;
-    border: none;
-}
-#bar{
+#deploybutton{
     display: none;
 }
 
-
-.bar-container{
-    position: absolute;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-}
-.barlinks{
+.deploy-links{
     display: none;
 }
 
@@ -375,12 +363,13 @@ overflow: hidden;
     display: flex;
     margin-top: 10px;
     width: 100%;
+    padding: 15px;
 }
 
 
 .emp-inf{
     margin-right: 30px;
-    border: transparent 15px solid;
+    padding: 20px;
     text-align: center;
     background-color: rgba(165, 53, 53, 0.5);
     border-radius: 15px; 

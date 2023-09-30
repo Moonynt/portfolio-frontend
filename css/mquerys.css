@@ -24,6 +24,166 @@
     .ft-extra p{
         text-align: center;
     }
+
+}
+
+@media (max-width: 874px){
+
+    .links{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+    }
+    
+    header .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    #deploybutton{
+        display: block;
+        cursor: pointer;
+        font-size: 60px;
+        padding: 40px;
+        z-index: 3;
+        position: fixed;
+        right: 0;
+    }
+    
+    .deploy-links{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        z-index: 2;
+        right: 100%;
+        transition: 0.5s ease-in-out;
+        top: 0;
+        display: block;
+    }
+
+    .deploy-links ul{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .deploy-links ul li{
+        flex: 1;
+        font-size: 50px;
+        position: relative;
+        transition: 0.2s background-color ease-out;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .deploy-links ul li:active{
+        background-color: grey;
+    }
+
+    .deploy-links ul li a{
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lab-container{
+        background-color: rgba(37, 42, 46);
+        border: rgba(37, 42, 46) 5px solid;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        border-radius: 15px;
+        
+     }
+     
+     
+     .lab-container h1{
+         font-size: 35px;
+         font-weight: bolder;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         background-color:rgba(165, 53, 53, 0.5);
+         border-radius: 10px;
+         text-align: center;
+     }
+     
+     .emp{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .emp-inf{
+        margin: auto;
+        border: transparent;
+        text-align: center;
+    }
+    
+    .emp p{
+        background-color: rgba(71, 73, 73, 0.6);
+        padding: 10px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin: 15px;
+    }
+
+    .emp-inf img{
+    justify-content: center;
+    }
+
+    .emp-inf span{
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .scrollup{
+        font-size: 55px;
+        position: fixed;
+        left: 75%;
+        top: 85%;
+        background-color: #a75243;
+        padding: 10px;
+        border-radius: 400px;
+     }
+
+     .ft-inf{
+        width: 70%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+     
+    .ft-extra{
+        width: 70%;
+        padding: 20px;
+    }
+    .ft-extra p{
+        width: 85%;
+        text-align: end;
+    }
+
+    .op-container{
+        overflow-x: scroll;
+    }
 }
 
 
@@ -126,157 +286,16 @@
             overflow-x: scroll;
          }
 
+
+
 }
 
-
-@media (max-width: 874px){
-
-    .links{
-        display: none;
+@keyframes go {
+    from{
+        translate: 0;
     }
-
-    header{
-        width: 100%;
+    to{
+        translate: 100%;
     }
     
-    header .main{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        z-index: 2;
-
-    }
-
-    nav{
-        display: none;
-    }
-
-    #bar{
-        display: block;
-        cursor: pointer;
-        font-size: 60px;
-        padding: 40px;
-    }
-
-
-    .bar-container{
-        position: absolute;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        background-color:#7a2313;
-        z-index: 1;
-    }
-
-    .bar-container ul{
-        list-style: none;
-        display:flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        align-items: stretch;
-        font-size: 40px;
-
-    }
-    .bar-container ul li{
-        margin: 0;
-        background-color: #a75243;
-
-        text-align: center;
-    }
-
-    .bar-container ul li a{
-        text-decoration: none;
-        display: block;
-        padding: 10rem;
-        transition: 0.5s background-color ease-out;
-    }
-
-    .bar-container ul li a:active{
-        background-color: #881906;
-    }
-
-
-
-    .lab-container{
-        background-color: rgba(37, 42, 46);
-        border: rgba(37, 42, 46) 5px solid;
-        width: 75%;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        border-radius: 15px;
-        
-     }
-     
-     
-     .lab-container h1{
-         font-size: 35px;
-         font-weight: bolder;
-         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-         background-color:rgba(165, 53, 53, 0.5);
-         border-radius: 10px;
-         text-align: center;
-     }
-     
-     .emp{
-        display: inline-block;
-        margin-top: 10px;
-    }
-    
-    .emp-inf{
-        margin: auto;
-        border: transparent;
-        text-align: center;
-    }
-    
-    .emp p{
-        background-color: rgba(71, 73, 73, 0.6);
-        padding: 10px;
-        border-bottom-right-radius: 15px;
-        border-top-left-radius: 15px;
-        margin: 15px;
-    }
-
-    .emp-inf img{
-    justify-content: center;
-    }
-
-    .emp-inf span{
-        text-align: center;
-        margin: 20px;
-    }
-    
-    .scrollup{
-        font-size: 55px;
-        position: fixed;
-        left: 75%;
-        top: 85%;
-        background-color: #a75243;
-        padding: 10px;
-        border-radius: 400px;
-     }
-
-     .ft-inf{
-        width: 70%;
-        text-align: start;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-     
-    .ft-extra{
-        width: 70%;
-        padding: 20px;
-    }
-    .ft-extra p{
-        width: 85%;
-        text-align: end;
-    }
-
-    .op-container{
-        overflow-x: scroll;
-    }
 }
